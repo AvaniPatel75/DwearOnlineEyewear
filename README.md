@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MyFirstProjectDemo
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
@@ -57,3 +58,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# DwearOnlineEyewear
+>>>>>>> eb5ff1b0907c49d5176c7f07fa4f59c1aa03b22d

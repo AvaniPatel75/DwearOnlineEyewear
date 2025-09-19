@@ -4,6 +4,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 import { UserValidationSigninService } from '../user-validation-signin.service';
 import { CommonModule } from '@angular/common';
 import {FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms'
+
 import { routes } from '../app.routes';
 import { AuthService } from '../auth.service';
 import { SlideComponent } from "../slide/slide.component";
