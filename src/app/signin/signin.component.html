@@ -1,0 +1,55 @@
+<div class="bg-transparent" id="back">
+    <app-slide />
+</div>
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <h3>Login Here</h3>
+
+    <div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="Email" id="email" formControlName="email" name="email" required class="form-control"
+                placeholder="Enter Email">
+        </div>
+        <div class="" *ngIf="signUpForm.controls['email'].invalid && signUpForm.controls['email']?.touched"
+            class="text-danger">Please Enter Valid Email</div>
+    </div>
+
+
+    <div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" id="username" formControlName="username" name="username" required
+                class="form-control" placeholder="Enter UserName">
+        </div>
+        <div class="" *ngIf="signUpForm.controls['username'].invalid && signUpForm.controls['username'].touched">
+            Please enetr valid Username.Username Must contain 8 latter with digits.
+        </div>
+    </div>
+
+    <div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" formControlName="password" name="password"
+                required class="form-control" placeholder="create Password">
+        </div>
+        <div *ngIf="signUpForm.controls['password'].invalid && signUpForm.controls['password'].touched">
+            create Strong password with special character and digits
+        </div>
+    </div>
+
+
+    
+    <button type="submit" >Sign In</button>
+
+    <!-- <div *ngIf="errMsg" class="success-message">
+        {{ errMsg }}
+    </div>
+    <div *ngIf="!errMsg" class="success-message">
+        {{ errMsg }}
+    </div> -->
+    <p class="redirect-login">
+        Already have an account? <a routerLink="/login">Login here</a>
+    </p>
+    <button type="button" id="cancle" (click)='backToMainPage()'>Cancel</button>
+    <p>{{signUpForm.value}}</p>
+</form>

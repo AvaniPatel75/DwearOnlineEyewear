@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-8" >
+
+            <div *ngFor="let i of data?.additional_images; let index = index">
+                <!-- Start a new row for every 2 images -->
+                <div class="row" *ngIf="index % 2 === 0">
+                    <div class="col-md-6 text-center" *ngIf="data?.additional_images?.length==0">
+                        <img [src]="data.image_url" alt="Product Image" class="img-fluid product-image">
+                    </div>
+                    <div class="col-md-6 text-center" *ngIf="data?.additional_images[index]">
+                        <img [src]="data.additional_images[index]" alt="Product Image" class="img-fluid product-image">
+                    </div>
+                    <div class="col-md-6 text-center" *ngIf="data?.additional_images[index + 1]">
+                        <img [src]="data.additional_images[index + 1]" alt="Product Image" class="img-fluid product-image">
+                    </div>
+                    
+                </div>
+                <!-- <div>
+                    <img [src]="data.image_url" alt="Product Image" class="img-fluid product-image">
+                </div> -->
+            </div>
+        </div>
+        <!-- Product Image -->
+        
+        
+        <div class="col p-3">
+             <!-- Product Details -->
+            <div class="row">
+                <div class="col p-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <!-- Basic Details -->
+                            <h4 class="text-primary">{{ data.model_no}}</h4>
+                            <h6 class="text-muted">{{ data.brand }}</h6>
+                            <p class="text-warning">⭐ {{ data.rating }} / 5</p>
+                            <h5 class="text-success">₹{{ data.price }}</h5>
+                            <h5 class="text-seconadry">{{data.reviews_count}}</h5>
+                            <hr>
+                            <div class="text-center mt-3">
+                                <!-- <button class="btn btn-primary btn-lg" (click)="proceedToOrder(data._id)" [routerLink]="['/placeOrder',data._id]">Buy Now</button> -->
+                                <button class="btn btn-outline-secondary btn-lg" [routerLink]="['/',data._id]" (click)="addTocart(data,$event)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col p-2">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <!-- Tecnical  Details -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong class="text-dark">Product ID:</strong> {{ data.product_id }}</p>
+                                    <p><strong class="text-dark">Type:</strong> {{ data.product_type }}</p>
+                                    <p><strong class="text-dark">Frame Type:</strong> {{ data.frame_type }}</p>
+                                    <p><strong class="text-dark">Shape:</strong> {{ data.frame_shape }}</p>
+                                    <p><strong class="text-dark">Size:</strong> {{ data.frame_size }}</p>
+                                    <p><strong class="text-dark">Prescription Type:</strong> {{ data.prescription_type }}</p>
+                                    <p><strong class="text-dark">FrameStyle:</strong> {{ data.frame_style }}</p>
+                                    <p><strong class="text-dark">FrameStyle Seconadry:</strong> {{ data.frame_style_secondary }}</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong class="text-dark">Dimensions:</strong> {{ data.frame_dimensions }}</p>
+                                    <p><strong class="text-dark">Color:</strong> {{ data.frame_color }}</p>
+                                    <p><strong class="text-dark">Weight Group:</strong> {{ data.weight_group }}</p>
+                                    <p><strong class="text-dark">Style:</strong> {{ data.frame_style_secondary }}</p>
+                                    <p><strong class="text-dark">Prescription:</strong> {{ data.prescription_type }}</p>
+                                    <p><strong class="text-dark">Gender:</strong> {{ data.gender }}</p>
+                                    <p><strong class="text-dark">createdAt:</strong> {{ data.createdAt }}</p>
+                                    <p><strong class="text-dark">Quantity:</strong> {{ data.stock_quantity }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2 m-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlvIxivHaEN7zeFBIX5cG6uygXokoeNWtfw&s" height="200px">
+                </div>
+        
+            </div>
+       
+    </div>
+</div>

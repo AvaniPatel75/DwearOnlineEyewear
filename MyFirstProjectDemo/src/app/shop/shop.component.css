@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.header {
+    background: #ee84b9;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.product-card, .city-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product-card:hover, .city-card:hover {
+    transform: scale(1.05);
+}
+.product-image, .city-image {
+    width: 100%;
+    border-radius: 10px;
+}
+.product-title, .city-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.product-price {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+}
+.add-to-cart {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.add-to-cart:hover {
+    background: #0056b3;
+}

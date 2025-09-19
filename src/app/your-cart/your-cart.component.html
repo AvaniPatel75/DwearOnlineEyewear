@@ -1,0 +1,51 @@
+<div class="container mt-4">
+  <h2>Your Orders</h2>
+  <!-- <h6>{{data|json}}</h6> -->
+ 
+  <div *ngFor="let order of data" class="card mb-3">
+    <div class="card-header bg-primary text-white">
+      <strong>Order ID:</strong> {{ order._id }}
+      <h1 class="text-white" *ngIf="isPlaced">Order Placed</h1>
+    </div>
+ 
+    <!-- <h5>{{order | json}}</h5> -->
+
+    <div class="card-body">
+      <p><strong>Order Status:</strong> {{ order.order_status }}</p>
+      <p><strong>Delivery Estimate:</strong> {{ order.delivery_estimate }}</p>
+      <p><strong>Payment Method:</strong> {{ order.payment_method }}</p>
+      <p><strong>Tracking ID:</strong> {{ order.tracking_id }}</p>
+      <p><strong>Country:</strong> {{ order.country }}</p>
+      
+      <h5>Items:</h5>
+      <div *ngFor="let item of order.items" class="row mb-3 border p-2">
+        <!-- Product Image -->
+        <div class="col-md-3">
+          <img [src]="item.image_url" class="img-fluid rounded" alt="Product Image">
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-9">
+          <p><strong>Color:</strong> {{ item.selectedColor }}</p>
+          <p><strong>Price:</strong> ₹{{ item.price }}</p>
+          <p><strong>Quantity:</strong> {{ item.placedQuantity }}</p>
+          <p><strong>Total Price:</strong> ₹{{ item.price * item.placedQuantity }}</p>
+        </div>
+      </div>
+
+      <button class="btn btn-danger" (click)="cancelOrder(order._id)">Cancel Order</button>
+    </div>
+    <span *ngIf="order.totalPrice !== undefined" class="fw-bold text-dark bg-warning ms-2 me-2" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: large;font-weight: 600;border-radius: 2%;">
+      Total: ₹{{ order.totalPrice }}
+    </span>
+
+    
+    <!-- <button class="btn btn-success ms-2 me-2" [disabled]="order.totalPrice == undefined">
+      Place Order
+    </button> -->
+
+    
+  </div>
+</div>
+
+

@@ -1,0 +1,60 @@
+<!-- <div class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end"> -->
+
+  <!-- <ul class="d-flex justify-content-end list-unstyled m-0">
+      <li>
+        <a  [routerLink]="'/login'"  style="cursor: pointer;" class="btn p-2 mx-1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+        </a>
+        
+      </li>
+      <li>
+        <a [routerLink]="['/cart']" type="button" class="btn p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          🛒
+        </a>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><strong> 🛒 Cart</strong></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <app-wishlist/>
+          </div>
+        </div>
+        
+      </li>
+      <li>
+        <a [routerLink]="['/order']" type="button" class="btn p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling2">
+          <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+        </a>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling2" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><strong>Orders</strong></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <app-your-cart/>
+          </div>
+       </div>
+      </li>
+    </ul> -->
+  <!--</div>-->
+  <div class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end"> 
+
+     <ul class="d-flex justify-content-end list-unstyled m-0">
+        <li>
+          <a  [routerLink]='["/login"]'  style="cursor: pointer;" class="btn p-2 mx-1" >
+            <svg width="24" height="24"><use xlink:href="#user"></use></svg>
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/Yourcart']" type="button" class="btn p-2 mx-1" >
+            🛒
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/orderDetail']" type="button" class="btn p-2 mx-1" >
+            <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+          </a>
+        </li>
+     </ul>
+  </div>

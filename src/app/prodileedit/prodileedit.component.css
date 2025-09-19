@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+}
+.navbar {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.checkout-container h2 {
+    color: #ff758c;
+}
+.btn-primary {
+    background-color: #ff758c;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #e05674;
+}
+footer {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.avatar {
+    border-radius: 50%;
+    border: 2px solid #ff758c;
+}
+.update-btn, .logout-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    background: #ff758c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.update-btn:hover, .logout-btn:hover {
+    background: #e05674;
+}
+.edit-form {
+    display: none;
+    margin-top: 20px;
+}

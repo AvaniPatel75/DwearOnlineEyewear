@@ -1,0 +1,122 @@
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="false">
+
+  <div class="offcanvas-header justify-content-between">
+    <h4 class="fw-normal text-uppercase fs-6">Menu</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body">
+
+    <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
+      <li class="nav-item border-dashed">
+        <button class="btn btn-toggle dropdown-toggle position-relative w-100 d-flex justify-content-between align-items-center text-dark p-2" data-bs-toggle="collapse" data-bs-target="#eyeglasses-collapse" aria-expanded="false">
+          <div class="d-flex gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+              <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+            </svg>
+            <label>Eyeglasses</label>
+          </div>
+        </button>
+        <div class="collapse" id="eyeglasses-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1">
+            <li class="border-bottom py-2"><a class="dropdown-item"  (click)="goToCategoryPageUsingMale('male') ; closeSidebar('male')"  [routerLink]="['/gender','male']" >Men</a></li>
+            <li class="border-bottom py-2"><a class="dropdown-item" (click)="goToCategoryPageUsingWomen('women'); closeSidebar('women')" [routerLink]="['/gender','women']" >Women</a></li>
+            <li class="border-bottom py-2"><a class="dropdown-item" (click)="goToCategoryPageUsingKid('kid'); closeSidebar('kid')" [routerLink]="['/gender','kid']" >Kids</a></li>
+            <li class="border-bottom py-2"><a class="dropdown-item" (click)="goToCategoryPageUsingUnisex('unisex'); closeSidebar('unisex')" [routerLink]="['/gender','unisex']" >Unisex</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item border-dashed">
+        <!-- <button class="btn btn-toggle dropdown-toggle position-relative w-100 d-flex justify-content-between align-items-center text-dark p-2" data-bs-toggle="collapse" data-bs-target="#frameshape-collapse" aria-expanded="false">
+          <div class="d-flex gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sunglasses" viewBox="0 0 16 16">
+              <path d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A2 2 0 0 0 8 6a2 2 0 0 0-1.112.338A2 2 0 0 0 5 5zm0 1h.941c.264 0 .348.356.112.474l-.457.228a2 2 0 0 0-.894.894l-.228.457C2.356 8.289 2 8.205 2 7.94V7a1 1 0 0 1 1-1"/>
+            </svg>
+            <span>Frame Shape</span>
+          </div>
+        </button> -->
+        <!-- <div class="collapse" id="frameshape-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal ps-5 pb-1">
+            <li class="border-bottom py-2"><a  class="dropdown-item"  (click)="goToCategoryPageShape('Round')" [routerLink]="['/frameshape','Round']" >Round</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Rectangle')" [routerLink]="['/frameshape','Rectangle']"  class="dropdown-item">Rectangle</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Wayfarer')" [routerLink]="['/frameshape','Cat-Eye']"  class="dropdown-item">Cat-Eye</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Aviator')" [routerLink]="['/frameshape','Aviator']"  class="dropdown-item">Aviator</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Rimless')" [routerLink]="['/frameshape','Rimless']"  class="dropdown-item">Rimless</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Halfrim')" [routerLink]="['/frameshape','Halfrim']"   class="dropdown-item">Halfrim</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Geometric')" [routerLink]="['/frameshape','Geometric']"  class="dropdown-item">Geometric</a></li>
+            <li class="border-bottom py-2"><a (click)="goToCategoryPageShape('Wayfarer')"  [routerLink]="['/frameshape','Wayfarer']"  class="dropdown-item">Wayfarer</a></li>
+          </ul>
+        </div> -->
+      </li>
+     
+      <!-- <label>Brands</label>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','OJOS']" (click)="goToCategoryPageUsingbrands('OJOS')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-circle" viewBox="0 0 16 16">
+            <path d="M7.988 12.158c-1.851 0-2.941-1.57-2.941-3.99V7.84c0-2.408 1.101-3.996 2.965-3.996 1.857 0 2.935 1.57 2.935 3.996v.328c0 2.408-1.101 3.99-2.959 3.99M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
+          </svg>
+          <span>OJOS Brand</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','MASABA']" (click)="goToCategoryPageUsingbrands('MASABA')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#frozen"></use></svg>
+          <span>Masaba House</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','LenskartAir']" (click)="goToCategoryPageUsingbrands('LenskartAir')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#pasta"></use></svg>
+          <span>Lenskart Air</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','VincentChase']" (click)="goToCategoryPageUsingbrands('VincentChase')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#breakfast"></use></svg>
+          <span>Vincent Chase</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','Sobhita']" (click)="goToCategoryPageUsingbrands('Sobhita')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#breakfast"></use></svg>
+          <span>Sobhita</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','Protitanium']" (click)="goToCategoryPageUsingbrands('Protitanium')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#spices"></use></svg>
+          <span>Pro Titanium</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','AcetateIcons']" (click)="goToCategoryPageUsingbrands('AcetateIcons')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#baby"></use></svg>
+          <span>Acetate Icons</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2" [routerLink]="['/product','JonsJacob']"  (click)="goToCategoryPageUsingbrands('JonsJacob')">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#household"></use></svg>
+          <span>Jons Jacob Tints</span>
+        </a>
+      </li>
+      <label>Other</label>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#personal"></use></svg>
+          <span>Contact LENS</span>
+        </a>
+      </li>
+      <li class="nav-item border-dashed">
+        <a  class="nav-link d-flex align-items-center gap-3 text-dark p-2">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#pet"></use></svg>
+          <span>Store Location</span>
+        </a>
+      </li> -->
+    </ul> 
+  
+  </div>
+
+</div>

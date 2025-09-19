@@ -1,0 +1,66 @@
+<!-- <div class="">
+    <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg" alt="User Avatar" class="avatar" height="100px" width="100px" style="border: 1px; border-radius: 50%;">
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+  </div> -->
+<form [formGroup]="profileForm" (ngSubmit)="save()" class="profile-form">
+    <table>
+        
+        <tr>
+            <div class="form-group">
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" formControlName="name" placeholder="Enter your full name" required /></td>
+            </div>
+            
+        </tr>
+        
+
+        <tr>
+            <div class="form-group">
+                <td><label for="phone">Phone</label></td>
+                <td><input type="text" id="phone" formControlName="phone" placeholder="Enter your phone number" /></td>
+            </div>
+        </tr>
+       
+        <tr>
+            <div class="form-group" >
+                <td><label for="street">Address</label></td>
+                <td><input type="text" id="street" formControlName="address.street" placeholder="Enter your street address"/></td>
+                
+            </div>
+        </tr>
+
+       <tr>
+        <div class="form-group">
+            <td><label for="city">City</label></td>
+            <td><input type="text" id="city" formControlName="address.city" placeholder="Enter your city" /></td>
+        </div>
+       </tr>
+
+        <tr>
+            <div class="form-group">
+                <td><label for="state">State</label></td>
+                <td><input type="text" id="state" formControlName="address.state" placeholder="Enter your state" /></td>
+            </div>
+        </tr>
+
+       <tr>
+        <div class="form-group">
+            <td><label for="zip_code">Zip Code</label></td>
+            <td><input type="text" id="zip_code" formControlName="address.zip_code" placeholder="Enter your zip code" /></td>
+        </div>
+       </tr>
+
+        <tr>
+            <div class="form-group">
+                <td><label for="country">Country</label></td>
+                <td><input type="text" id="country" formControlName="address.country" placeholder="Enter your country" /></td>
+            </div>
+        </tr>
+       
+
+    </table>
+   
+    <button type="submit" class="save-btn" (click)="save()">Save</button>
+    <button type="button" class="logout-btn" (click)="logout()">Logout</button>
+</form>

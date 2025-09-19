@@ -1,0 +1,23 @@
+<div class="profile-container">
+    <h2>Profile Details</h2>
+    
+    <div *ngIf="user; else loading">
+      <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg" alt="User Avatar" class="avatar" height="100px" width="100px" style="border: 1px; border-radius: 50%;">
+      <p><strong>Username:</strong> {{ user.username }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <!-- <p><strong>Joined:</strong> {{ user.timestamp | date:'medium' }}</p> -->
+  
+      
+    </div>
+  
+    <ng-template #loading>
+      <p>Loading profile...</p>
+    </ng-template>
+  
+   <div>
+    <!-- <button class="update-btn"  [routerLink]="['/updateProfile']">Update Profile</button> -->
+    <!-- <button class="update-btn" *ngIf="isadded==0" [routerLink]="['/updateProfile']">Add Profile Detail</button> -->
+    <button class="logout-btn" (click)="logout()">Log Out</button>
+   </div>
+</div> 
+  

@@ -1,0 +1,76 @@
+<section class="py-5 overflow-hidden">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-md-12">
+  
+          <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+            <h2 class="section-title">Brands</h2>
+  
+            <div class="d-flex align-items-center">
+              <a href="#" class="btn btn-primary me-2">View All</a>
+              <div class="swiper-buttons">
+                <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
+                <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+  
+          <div class="category-carousel swiper">
+            <div class="swiper-wrapper">
+              <a   class="nav-link swiper-slide text-center"  (click)="goToCategoryPageUsingbrands('OJOS')" [routerLink]="['/product','OJOS']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSniolUhkInF6XSbex-9niwY-ffIA3zWYkOQ&s" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">OJOS</h4>
+              </a>
+              <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('VincentChase')" [routerLink]="['product','VincentChase']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrnUnruVFostunB8YLfDRjxnN_T3juvu3yA&s" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">VincentChase</h4>
+              </a>
+              <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('LenskartAir')"  [routerLink]="['product','LenskartAir']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4kQ4v3jkng-n-CpT6k6g-w_Q9fA9VtcoRMA&s" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">LenskartAir</h4>
+              </a>
+              <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('MASABA')"  [routerLink]="['product','MASABA']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCpWXgQIEr14VBIrTnvvut5KC35N7ZBiX7Ug&s" class="rounded-circle" alt="Category Thumbnail" style="width:150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">MASABA</h4>
+              </a>
+              <!-- <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('Rhapsody')"  [routerLink]="['product','Rhapsody']">
+                <img src="https://seeklogo.com/images/R/Rhapsody-logo-CC3FEAD98A-seeklogo.com.png" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">Rhapsody</h4>
+              </a> -->
+              <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('ProTitanium')"  [routerLink]="['product','ProTitanium']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbLwd5Ygg3jvZiXkfDINH1tbO3P7n_XRQPQsD5SxmJ-3YJ9aqJQzuLmQdPQ56SgLthq74&usqp=CAU" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">Pro Titanium</h4>
+              </a>
+              <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('Shobita')"  [routerLink]="['product','Shobita']">
+                <img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=cover,width=600,height=600,format=auto/m/3d6f/7f46/9d25/6142/4828/6760/fb9a/706e/1d5c/5eee/5eee.png" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">Shobita</h4>
+              </a>
+              <!-- <a  class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('GlidedJewels')"  [routerLink]="['product','GlidedJewels']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNz7l1s49-cENepNRxmCyMSQD8lNrctxxcCg&s" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">Glided Jewels</h4>
+              </a> -->
+              <!-- <a class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('RichAcetate')"  [routerLink]="['product','RichAcetate']">
+                <img src="https://us.123rf.com/450wm/wikagraphic/wikagraphic2010/wikagraphic201038109/159768171-ra-letter-logo-in-a-square-shape-gold-and-silver-colored-geometric-ornaments-vector-design-template.jpg?ver=6" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">Rich Acetate</h4>
+              </a> -->
+              <a class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('JohnJacobs')"  [routerLink]="['product','JohnJacobs']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-b4jib5zb6tmlOj9P_ad1RcHgwBQ59SUQw&s" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">JohnJacobs</h4>
+              </a>
+              <a class="nav-link swiper-slide text-center" (click)="goToCategoryPageUsingbrands('Hooper')"  [routerLink]="['product','Hooper']">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkMXVi90Ptyisi1aCGI2vILdA9v8QuUJAHjC2Lorq-OlbZoZCU_YAtwtp3Eo2fbIVVPlM&usqp=CAU" class="rounded-circle" alt="Category Thumbnail" style="width: 150px;">
+                <h4 class="fs-6 mt-3 fw-normal category-title">Hooper</h4>
+              </a>
+              
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>

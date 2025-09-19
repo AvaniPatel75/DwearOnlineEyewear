@@ -1,0 +1,44 @@
+<section class="py-3">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-md-12">
+  
+          <div class="banner-blocks">
+          
+            <div class="banner-ad d-flex align-items-center large bg-info block-1" style="background: url('https://www.shutterstock.com/image-photo/decorative-balls-eyeglasses-on-bright-260nw-2174731489.jpg') no-repeat; background-size: cover;">
+              <div class="banner-content p-5">
+                <div class="content-wrapper text-light">
+                  <h3 class="banner-title text-light">Items on SALE</h3>
+                  <p class="text-light">Discounts up to 30%</p>
+                  <a href="#" class="btn-link text-light" [routerLink]="['/offerUpto/',30]" (click)="offerpage(30)">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="banner-ad bg-success-subtle block-2" style="background:url('https://www.shutterstock.com/image-photo/set-different-sunglasses-eyeglasses-on-260nw-2332835643.jpg') no-repeat;background-size: cover">
+              <div class="banner-content align-items-center p-5">
+                <div class="content-wrapper text-dark">
+                  <h3 class="banner-title text-dark">Combo offers</h3>
+                  <p>Discounts up to 50%</p>
+                  <a href="#" class="btn-link text-dark" [routerLink]="['/offerUpto',50]" (click)="offerpage(50)">Shop Now</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="banner-ad bg-danger block-3" style="background:url('https://m.media-amazon.com/images/S/aplus-media-library-service-media/e388cbb7-9385-498f-8ce2-fb0214173d33.__CR0,0,970,600_PT0_SX970_V1___.jpg') no-repeat;background-size: cover">
+              <div class="banner-content align-items-center p-5">
+                <div class="content-wrapper text-dark">s
+                  <h3 class="banner-title text-dark">Discount Coupons</h3>
+                  <p>Discounts up to 40%</p>
+                  <a href="#" class="btn-link text-dark" [routerLink]="['/offerUpto',40]" (click)="offerpage(40)">Shop Now</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!-- / Banner Blocks -->
+            
+        </div>
+      </div>
+    </div>
+  </section>

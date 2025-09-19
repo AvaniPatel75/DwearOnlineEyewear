@@ -1,0 +1,92 @@
+/* Profile Form Container */
+.profile-form {
+    max-width: 470px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #e6ffe6; /* Light green background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #006600; /* Dark green */
+    display: block;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff3399; /* Pink border */
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #cc0066; /* Darker pink */
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+    margin: 5px;
+}
+
+/* Save Button */
+.save-btn {
+    background: #4caf50; /* Green */
+    color: white;
+}
+
+.save-btn:hover {
+    background: #388e3c; /* Darker Green */
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #ff3399; /* Pink */
+    color: white;
+}
+
+.logout-btn:hover {
+    background: #cc0066; /* Darker Pink */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile-form {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+}

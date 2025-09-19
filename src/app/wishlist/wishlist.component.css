@@ -1,0 +1,52 @@
+/* Style for the cart container */
+.offcanvas-body {
+    padding: 15px;
+    background-color: #ffffff; /* Light grey background */
+  }
+  
+  /* Cart item card */
+  .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+  }
+  
+  /* Product image */
+  .card img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* Rounded corners on the left */
+  }
+  
+  /* Card body (right side) */
+  .card-body {
+    padding: 10px;
+  }
+  
+  /* Price text */
+  .text-success {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Muted text */
+  .text-muted {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  /* Align text neatly */
+  .card h6 {
+    margin-bottom: 5px;
+  }
+  

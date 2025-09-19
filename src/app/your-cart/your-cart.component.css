@@ -1,0 +1,12 @@
+#offcanvasExampleLabel {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50; /* Deep Blue */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #3498db; /* Light blue underline */
+    margin-bottom: 3px;
+    text-align: center;
+}

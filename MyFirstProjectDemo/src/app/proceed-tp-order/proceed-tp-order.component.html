@@ -1,0 +1,50 @@
+<h3>Order Details</h3>
+
+<!-- <div *ngFor="let product of products" class="product-details"> -->
+  <img [src]="product.image_url" alt="Product Image" width="150">
+  <p><strong>Product Name:</strong> {{ product.name }}</p>
+  <p><strong>Selected Color:</strong> {{ product.selectedColor }}</p>
+  <p><strong>Quantity:</strong> {{ product.quantity }}</p>
+  <p><strong>Total Price:</strong> ₹{{ product.total_price }}</p>
+<!-- </div>  -->
+ <h3>Shipping Details</h3>
+    
+    <div class="card mt-3 p-3">
+      <h4>Shipping Details</h4>
+      <form [formGroup]="orderForm" (ngSubmit)="placeOrder(product,$event)">
+        <div class="mb-2">
+          <label>Street:</label>
+          <input formControlName="street" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>City:</label>
+          <input formControlName="city" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>State:</label>
+          <input formControlName="state" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>Pincode:</label>
+          <input formControlName="pin" type="number" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>Country:</label>
+          <input formControlName="country" type="text" class="form-control" required>
+        </div>
+        <div class="mb-2">
+          <label>Payment Method:</label>
+          <select formControlName="payment_method" class="form-control">
+            <option>Credit Card</option>
+            <option>Cash on Delivery</option>
+            <option>Net Banking</option>
+            <option>UPI</option>
+          </select>
+        </div>
+        <button class="btn btn-success mt-2 w-100" type="submit" (click)="placeOrder(product,$event)">Confirm Order</button>
+      </form>
+      
+    </div>
+  
+
+  
